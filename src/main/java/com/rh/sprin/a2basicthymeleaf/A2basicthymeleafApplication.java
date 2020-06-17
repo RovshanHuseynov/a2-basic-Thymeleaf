@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*
-    localhost:8080/hello
+    http://localhost:8080/hello
  */
 @SpringBootApplication
 public class A2basicthymeleafApplication {
