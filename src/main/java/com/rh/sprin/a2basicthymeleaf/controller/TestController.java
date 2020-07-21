@@ -19,7 +19,7 @@ public class TestController {
 
     @RequestMapping("/processForm")
     public String process(@RequestParam("studentName") String s, Model model){
-        model.addAttribute("studentName", s);
+        model.addAttribute("studentName", s.toUpperCase());
         return "form3";
     }
 }
