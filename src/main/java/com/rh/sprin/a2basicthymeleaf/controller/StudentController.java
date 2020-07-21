@@ -3,6 +3,7 @@ package com.rh.sprin.a2basicthymeleaf.controller;
 import com.rh.sprin.a2basicthymeleaf.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -21,7 +22,8 @@ public class StudentController {
     }
 
     @RequestMapping("/confirm")
-    public String confirm(){
+    public String confirm(@ModelAttribute("student") Student s){
+        System.out.println("aaaa " + s);
         return "student-confirmation";
     }
 }
