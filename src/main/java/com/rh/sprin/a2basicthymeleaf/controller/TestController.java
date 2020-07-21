@@ -14,4 +14,9 @@ public class TestController {
     public String process(){
         return "form3";
     }
+
+    @RequestMapping("/begin")
+    public String begin(){
+        return "form1";
+    }
 }
