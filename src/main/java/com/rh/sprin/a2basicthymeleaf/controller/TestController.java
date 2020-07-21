@@ -1,6 +1,7 @@
 package com.rh.sprin.a2basicthymeleaf.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -11,7 +12,8 @@ public class TestController {
     }
 
     @RequestMapping("/processForm")
-    public String process(){
+    public String process(Model model) {
+        model.addAttribute("studentName", "aaaaa");
         return "form3";
     }
 

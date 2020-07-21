@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    Student name is : ${param.studentName}
+    Student name is : <p th:text="${studentName}" />
 </body>
 </html>
