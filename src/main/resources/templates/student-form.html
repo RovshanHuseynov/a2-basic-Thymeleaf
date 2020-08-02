@@ -7,14 +7,16 @@
     <title>Title</title>
 </head>
 <body>
-    <form:form action="/student/confirm" modelattribute="student">
-        First name : <form:input path="firstName" />
+    <form:form action="/student/confirm"  modelattribute="student" method="POST">
+<!--        First name : <form:input path="firstName" />-->
+        <input type="text" value="kamil" name="firstName"/>
         <br/>
         <br/>
-        Last name : <form:input path="lastName" />
+<!--        Last name : <form:input path="lastName" />-->
+        <input type="text" value="kamilzade" name="lastName"/>
         <br/>
         <br/>
-        <input type="submit">
+        <button type="submit">Submit</button>
     </form:form>
 </body>
 </html>
